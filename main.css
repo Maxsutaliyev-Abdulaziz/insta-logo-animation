@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+}
+
+.logo {
+    zoom: .7;
+    background-image: linear-gradient(225deg, #543ead, #850097, #de0082, #f66e48, orange);
+    background-size: 100% 160%;
+    animation: anima 7s infinite linear;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    box-shadow: 0 0 3px 1px #252525;
+    position: relative;
+}
+
+.logo-border {
+    background-image: linear-gradient(225deg, #543ead, #850097, #de0082, #f66e48, orange);
+    background-size: 100% 160%;
+    animation: anima 7s infinite linear;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: 15px solid white;
+}
+.logo:active{
+    width: 440px;
+    height: 320px;
+    border-radius: 50px;
+}
+.logo:active .logo-border {
+    width: 360px;
+    height: 250px;
+    border-radius: 40px;
+}
+.logo:active .logo-dot {
+    box-shadow: 0px 0px 1000000px 100px rgb(255, 255, 255);
+    transform: scale(1.4);
+    transition: .05s;
+    right: 80px;
+    top: 80px;
+}
+
+.logo:active .logo-circle {
+    background: #fff;
+    transform: scale(.95);
+    transition: .1s;
+}
+
+.logo-circle {
+    animation: anima 7s infinite linear;
+    background-image: linear-gradient(225deg, #543ead, #850097, #de0082, #f66e48, orange);
+    background-size: 100% 160%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 63px;
+    border: 15px solid white;
+}
+
+.logo-dot {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 90px;
+    right: 90px;
+}
+
+@keyframes anima {
+    0% {
+        background-position: 50% 0;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 50% 0;
+    }
+}
